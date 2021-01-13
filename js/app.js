@@ -151,6 +151,8 @@ function submitter(event) {
 }
 
 
+
+
 // var container = document.getElementById('CookiesForm')
 // container.innerHTML = ''
 // for ( var i = 0; i< storehours.length; i ++){

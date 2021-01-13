@@ -9,8 +9,33 @@
       
     </header>
     <main>
+
       <h2>Sold Cookies</h2>
       <div id="locations">
+
+        
+        <div id="New Cookie Stand">
+          <form action="submit" id="CookiesForm">
+            <fieldset>
+              <legend> Add new cookie stand</legend>
+           <input type="text" id="locationName" name="locationName" required pattern="[a-z]{4,10}" title="User should wrrite lowecase letters only for the name 
+           and should use at least 4 letters">
+             <label for="locationName"> Location Name </label>
+             <br>
+             <br>
+             <input type="number" id="MinHourlyCuostmers" name ="MinHourlyCuostmers" min="1" required >
+             <label for="MinHourlyCuostmers"> Mminumum Hourly Coustumers </label>
+             <br>
+             <br>
+             <input type="number" id="MaxHourlyCoustmers" name = "MaxHourlyCoustmers" min = "1" required>
+             <label for="MaxHourlyCoustmers"> Maximum Hourly Coustumers </label>
+             <br>
+             <br>
+             <input type="number" id="AverageCookiesPerSale" name ="AverageCookiesPerSale " min ="1" required>
+             <label for="AverageCookiesPerSale"> Average Cookies Per Sale</label>
+             <button type="submit"> Submit</button>
+          </form>
+        </div>
       
         <!-- generate this from js: -->
         <!-- <article>

@@ -1,0 +1,28 @@
+body {
+    background-color: lightslategrey;
+}
+table {
+    border: 20px solid black;
+    padding: 20px;
+    margin: 20px;
+    columns: 20px;
+    text-align: center;
+    background-color: plum;
+    color:darkred;
+    width: 100%;
+  
+}
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+a :link {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h4 {
+    font-size: xx-large;
+    text-align: center;
+}

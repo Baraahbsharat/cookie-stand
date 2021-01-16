@@ -236,7 +236,7 @@ function submitter(event) {
     console.log('AverageCookiesPerSale', avgCookies);
     
     if(minHour > maxHour) {
-        alert('you shpuld add reight minimum number less than the maximum number');}
+        alert('you should add reight minimum number less than the maximum number');}
         else {
             var addNewLocation = new CookieShop(name, minHour, maxHour, avgCookies)
             cookiesTable.removeChild(totalRow);

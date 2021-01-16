@@ -234,17 +234,26 @@ function submitter(event) {
     console.log('MaxHourlyCoustmers', maxHour);
     var avgCookies = parseInt(event.target.AverageCookiesPerSale.value)
     console.log('AverageCookiesPerSale', avgCookies);
-    var addNewLocation = new CookieShop(name, minHour, maxHour, avgCookies)
+    
+    if(minHour > maxHour) {
+        alert('you shpuld add reight minimum number less than the maximum number');}
+        else {
+            var addNewLocation = new CookieShop(name, minHour, maxHour, avgCookies)
+            cookiesTable.removeChild(totalRow);
+            addNewLocation.calculateCoustPerHOur();
+            addNewLocation.calculateAmountOfCookiesForEachHour();
+            addNewLocation.render();
+            for (var i = 1; i < totalRow.childNodes.length -1; i++) {
+                totalRow.childNodes[i].textContent = totalOfColumn[i-1];
+            }
+            totalRow.childNodes[i].textContent = grandTotal;
+            cookiesTable.appendChild(totalRow);
+          
+       
+       
+        }
+    
       
-    cookiesTable.removeChild(totalRow);
-    addNewLocation.calculateCoustPerHOur();
-    addNewLocation.calculateAmountOfCookiesForEachHour();
-    addNewLocation.render();
-    for (var i = 1; i < totalRow.childNodes.length -1; i++) {
-        totalRow.childNodes[i].textContent = totalOfColumn[i-1];
-    }
-    totalRow.childNodes[i].textContent = grandTotal;
-    cookiesTable.appendChild(totalRow);
   
 
 }
